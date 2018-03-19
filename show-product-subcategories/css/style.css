@@ -1,0 +1,31 @@
+.side-navigation {
+  background: #fff;
+  float: left;
+  position: absolute;
+  width: 85px;
+  z-index: 1;
+  height: 700px;
+}
+
+.side-menu-container {
+  margin-top: 100px;
+}
+
+.single-product-side-menu {
+  transform: rotate(-90deg);
+  top: 210px;
+  right: 200px;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+  width: 500px;
+}
+
+.single-product-side-menu a {
+  color: #CFBDA9;
+}
+
+.single-product-side-menu p {
+  color: #DA0E52;
+}
