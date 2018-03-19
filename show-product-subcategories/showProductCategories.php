@@ -1,4 +1,12 @@
 <?php
+ /*
+ Plugin Name: Show Product Categories
+ Plugin URI:
+ description: Display WooCommerce product main category and it's subcategories in a cute sidebar next to the product image
+ Author: Emma Blixt
+ Author URI: https://standout.se
+ */
+
 defined('ABSPATH') or die('No script kiddies please!');
 require_once 'includes/setup.php';
 
@@ -46,7 +54,7 @@ class showProductCategories
             endif;
           endforeach;
           if (!$found) :
-            $output .= '<a href="' . esc_url(home_url('/product-category/' . $category->name)) . '">';
+            $output .= '<a href="' . esc_url(home_url('/product-category/' . $category->name)) . '"> ';
             $output .= $category->name;
             $output .= ' / </a>';
           endif;
@@ -61,3 +69,5 @@ class showProductCategories
         echo $output;
       }
 }
+
+$show_categories = new showProductCategories();
